@@ -1,0 +1,53 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="etutor.android.santosh" version="1.0.0">
+  <name>Etutor</name>
+  <description>Etutor - New Way To Learn</description>
+  <author href="http://etutoredu.com" email="contact@etutoredu.com">Etutor Team</author>
+  <content src="index.html"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+
+  <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0"/> 
+  <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0"/>
+ 
+  <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+  <icon src="icon.png"/>
+  <platform name="android">
+    <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="www/res/icon/android/drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="www/res/icon/android/drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="www/res/icon/android/drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="www/res/icon/android/drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <splash src="www/res/screen/android/drawable-land-ldpi-screen.png" density="land-ldpi"/>
+    <splash src="www/res/screen/android/drawable-land-mdpi-screen.png" density="land-mdpi"/>
+    <splash src="www/res/screen/android/drawable-land-hdpi-screen.png" density="land-hdpi"/>
+    <splash src="www/res/screen/android/drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
+    <splash src="www/res/screen/android/drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
+    <splash src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
+    <splash src="www/res/screen/android/drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="www/res/screen/android/drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="www/res/screen/android/drawable-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="www/res/screen/android/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+    <splash src="www/res/screen/android/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+    <splash src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+  </platform>
+    
+    <feature name="NetworkStatus">
+    <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+</feature>
+
+  <access origin="*"/>
+  <access origin="tel:*" launch-external="yes" />
+  <access origin="mailto:*" launch-external="yes" />
+  <access origin="https://etutoredu.com/send.php" />
+  <access origin="https://etutoredu.com/" />
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+</widget>
